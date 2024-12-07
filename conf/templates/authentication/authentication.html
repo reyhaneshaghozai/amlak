@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود شماره تلفن</title>
+</head>
+<body>
+    <h1>شماره تلفن خود را وارد کنید</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ارسال</button>
+    </form>
+</body>
+</html>

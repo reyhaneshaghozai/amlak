@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>تایید کد امنیتی</title>
+</head>
+<body>
+    <h2>کد امنیتی شما</h2>
+    <p>کد امنیتی: <strong>{{ otp_code }}</strong></p>
+    <p>شماره تلفن: {{ phone_number }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <label>کد امنیتی خود را وارد کنید:</label>
+        <input type="text" name="otp_code" required>
+        <button type="submit" name="submit_otp">ارسال کد</button>
+    </form>
+</body>
+</html>

@@ -1,11 +1,889 @@
- <!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>melk</title>
-</head>
-<body>
-    <h1>خوش آمدید به وبسایت ما!</h1>
-</body>
-</html>
+{% extends "parent/base.html" %}
+{% load static  %}
+{% block title %}amelk{% endblock title %}
+
+{% comment %} content {% endcomment %}
+{% block content %}
+ <!-- Under Header -->
+    <section class="headlines container">
+
+        <!-- The texts -->
+        <div class="headlines__texts">
+            <span class="headlines__textI">خانه ای برای تو</span>
+
+            <span>املاک لوکس  مشاورین حرفه ای </span>
+
+            <span>سرمایه گذاری مطمئن</span>
+        </div>
+
+        <!-- search bar -->
+        <div class="headlines__search_bar">
+            <i class="fa-solid fa-house headlines__search_barIcon"></i>
+            <div class="headlines__search_barline"></div>
+            <input type="text" class="headlines__search_barInput">
+        </div>
+
+        <!-- icons -->
+        <div class="headlines__icons">
+            <!-- icon 1 -->
+            <div class="headlines__icon">
+                <i class="fa-solid fa-building"></i>
+                <span class="headlines__icon_text">300K+</span>
+            </div>
+
+            <!-- icon 2 -->
+            <div class="headlines__icon">
+                <i class="fa-solid fa-building"></i>
+                <span class="headlines__icon_text">200K+</span>
+            </div>
+
+            <!-- icon 3 -->
+            <div class="headlines__icon">
+                <i class="fa-solid fa-house-chimney"></i>
+                <span class="headlines__icon_text">500K+</span>
+            </div>
+        </div>
+    </section>
+    <!-- Homes in Zahedan -->
+    <section class="zahedan">
+        
+        <!-- headline -->
+        <span class="zahedan__headline">املاکی در زاهدان برای شما</span>
+    
+        <!-- The Available Homes -->
+        <div class="zahedan__homes">
+
+            <!-- All the boxes for the homes -->
+            <div class="zahedan__homes_boxes">
+
+                <!-- 1st home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/home_right.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/homeI.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/home_left.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1st home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/home_right.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/homeI.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd home -->
+                <div class="zahedan__home">
+                    <!-- img of home -->
+                    <div class="zahedan__home_imgDiv">
+                        <img src="{% static 'assets/img/homes/home_left.png' %}" alt="Picture of the House" class="zahedan__home_img">
+                    </div>     
+
+                    <!-- name of house and price -->
+                    <div class="zahedan__home_namePrice">
+                        <!-- name -->
+                        <span>آپارتمان</span>
+                        
+                        <!-- price -->
+                        <span class="zahedan__home_price">$267000</span>
+                    </div>
+
+                    <!-- The rooms -->
+                    <div class="zahedan__home_rooms">
+                        <div class="zahedan__home_rooms_right">
+                            <!-- eating -->
+                            <div class="zahedan__home_eatingRooms">
+                                <span class="room_text">1</span>
+                                <i class="fa-solid fa-utensils zahedan__home_roomsIcons"></i>
+                            </div>
+                        
+                            <!-- sleeping -->
+                            <div class="zahedan__home_sleepingRooms">
+                                <span class="room_text">4</span>
+                                <i class="fa-solid fa-bed zahedan__home_roomsIcons"></i>
+                            </div>
+                        </div>
+                        
+
+                        <!-- size -->
+                        <div class="zahedan__home_size">
+                            <span>(2000sqft</span>
+                            <div class="zahedan__home_sizeLogo_div">
+                                <img src="{% static './assets/img/square_feet_logo.png' %}" alt="Square Feet" class="zahedan__home_sizeLogo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- The buttons for searching through the homes -->
+            <div class="zahedan__homes_searching">
+
+                <!-- 1st ball -->
+                <div class="zahedan__homes_searchingI">
+
+                </div>
+
+                 <!-- 2nd ball -->
+                 <div class="zahedan__homes_searchingII">
+
+                 </div>
+
+                <!-- 3rd ball -->
+                <div class="zahedan__homes_searchingIII">
+
+                </div>
+
+                <!-- 4th ball -->
+                <div class="zahedan__homes_searchingIV">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- More Land Suggestions -->
+    <section class="suggestion container">
+        <!-- headline -->
+        <span class="suggestion__headline">املاک پیشنهادی بیشتر</span>
+
+        <!-- The Suggestion Boxes -->
+        <div class="suggestion__boxes">
+
+            <!-- 1st box -->
+            <a href="#" class="suggestion__boxeI">
+
+                <!-- img -->
+                <div class="suggestion__boxeI_imgDiv">
+                    <img src="{% static 'assets/img/transactions/buying_land.png' %}" alt="Buying a Land" class="suggestion__boxeI_img">
+                </div>
+                
+                <!-- Texts -->
+                <div class="suggestion__boxeI_texts">
+                    <span class="suggestion__boxeI_headlineText">خرید یک ملک</span>
+
+                    <p class="suggestion__boxeI_bottomText">خانه رویایی خود را  با تجربه همه جانبه از چیزهایی
+                        که در هیچ جای دیگری پیدا نمیکنید پیدا کنید </p>
+                </div> 
+            </a>
+
+            <!-- 2nd box -->
+            <a href="selling_landIII.html" class="suggestion__boxeI">
+
+                <!-- img -->
+                <div class="suggestion__boxeI_imgDiv">
+                    <img src="{% static 'assets/img/transactions/selling_land.png' %}" alt="Selling a Land" class="suggestion__boxeI_img">
+                </div>
+                
+                <!-- Texts -->
+                <div class="suggestion__boxeI_texts">
+                    <span class="suggestion__boxeI_headlineText">فروش یک ملک</span>
+
+                    <p class="suggestion__boxeI_bottomText">مهم نیست چه مسیری برای  فروش خانه خود طی میکنید
+                        ما میتوانیم به شما کمک کنیم فروش موفقی داشته باشید</p>
+                </div> 
+            </a>
+
+            <!-- 3rd box -->
+            <a href="renting_landIV.html" class="suggestion__boxeI suggestion__boxeI__white_padding">
+                <!-- img -->
+                <div class="suggestion__boxeI_imgDiv">
+                    <img src="{% static 'assets/img/transactions/lending_land.png' %}" alt="Renting a Land" class="suggestion__boxeI_img">
+                </div>
+                
+                <!-- Texts -->
+                <div class="suggestion__boxeI_texts">
+                    <span class="suggestion__boxeI_headlineText">اجاره یک ملک</span>
+
+                    <p class="suggestion__boxeI_bottomText">یک تجربه آنلاین یکپارچه در  بزرگترین  شبکه اجاره
+                        از درخواست تا اجاره  </p>
+                </div> 
+            </a>
+
+        </div>
+
+
+    </section>
+    <!-- The Special Sells -->
+    <section class="specialSell container">
+        <!-- Headline -->
+        <span class="specialSell__headline">فروش ویژه</span>
+
+
+        <!-- The boxes -->
+        <div class="specialSell__boxes">
+
+            <!-- 1st box -->
+            <div class="specialSell__boxI">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyI.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 2nd box -->
+            <div class="specialSell__boxI">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyII.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 3rd box -->
+            <div class="specialSell__boxI">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyIII.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 4th box -->
+            <div class="specialSell__boxI specialSell__boxI--hidden">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyI.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 5th box -->
+            <div class="specialSell__boxI specialSell__boxI--hidden">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyII.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 6th box -->
+            <div class="specialSell__boxI specialSell__boxI--hidden">
+                <!-- image of the Property -->
+                 <div class="specialSell__boxI_imgDiv">
+                    <img src="{% static 'assets/img/properties/propertyIII.png' %}" alt="First Property" class="specialSell__boxI_img">
+                </div>
+
+                <!-- Texts 1 -->
+                <div class="specialSell__boxI_topTexts">
+                    
+                    <span class="specialSell__boxI_topTextI">IDR 200.000.000</span>
+                    
+                    <span class="specialSell__boxI_topTextII">آدرس خیابان دانشگاه</span>
+
+                    <a href="#" class="specialSell__boxI_topTextIII">مشاهده</a>
+                </div>
+
+                <!-- Icons and Texts -->
+                <div class="specialSell__boxI_categories">
+
+                    <!-- 1st -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>360m</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-globe"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>متراژ</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>3</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-toilet-paper"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>سرویس بهداشتی</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="specialSell__boxI_categoryI">
+
+                        <!-- Icons and Text -->
+                        <div class="specialSell__boxI_category_icon">
+                            <span>5</span>
+                            <i class="specialSell__boxI_category_actualIcon fa-solid fa-bed"></i>
+                        </div>
+
+                        <!-- Category -->
+                        <span>اتاق خواب</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- The Link for more boxes -->
+        <a href="#" class="suggestion__link">مشاهده بیشتر...</a>
+    </section>
+    <!-- Lux Homes -->
+    <section class="lux_homes container">
+
+        <!-- Headline -->
+        <span class="lux_homes__headline">خانه های لوکس برای شما</span>
+    
+        <!-- Ads -->
+        <div class="lux_homes__ads">
+
+            <!-- Image Ads -->
+            <div class="lux_homes__ads_Images">
+                <!-- Ad 1, The image is linked in the CSS -->
+                <div class="lux_homes__adI_Image">
+                    
+                    <!-- English Texts -->
+                    <div class="lux_homes__adI_englishText">
+                        <span class="lux_homes__adI_englishTextI">Couch Bed</span>
+                    
+                        <span class="lux_homes__adI_englishTextII">Minimalist House</span>
+                        
+                        <span class="lux_homes__adI_englishTextIII">IDR 200jt</span>    
+                    </div>
+
+
+                    <a href="#">
+                        <div class="lux_homes__adI_more">
+                            <span>مشاهده</span>
+                        </div>                        
+                    </a>
+                    
+
+                </div>
+
+                <!-- Ad 2 (for Desktop), The image is linked in the CSS -->
+                <div class="lux_homes__adI_Image lux_homes__adI_ImageII lux_homes__adI_Image--hidden">
+                    
+                    <!-- English Texts -->
+                    <div class="lux_homes__adI_englishText">
+                        <span class="lux_homes__adI_englishTextI">Couch Bed</span>
+                    
+                        <span class="lux_homes__adI_englishTextII">Minimalist House</span>
+                        
+                        <span class="lux_homes__adI_englishTextIII">IDR 200jt</span>    
+                    </div>
+
+
+                    <a href="#">
+                        <div class="lux_homes__adI_more">
+                            <span>مشاهده</span>
+                        </div>                        
+                    </a>
+                    
+
+                </div>
+
+                <!-- Ad 3 (for Desktop), The image is linked in the CSS -->
+                <div class="lux_homes__adI_Image lux_homes__adI_ImageIII lux_homes__adI_Image--hidden">
+                    
+                    <!-- English Texts -->
+                    <div class="lux_homes__adI_englishText">
+                        <span class="lux_homes__adI_englishTextI">Couch Bed</span>
+                    
+                        <span class="lux_homes__adI_englishTextII">Minimalist House</span>
+                        
+                        <span class="lux_homes__adI_englishTextIII">IDR 200jt</span>    
+                    </div>
+
+
+                    <a href="#">
+                        <div class="lux_homes__adI_more">
+                            <span>مشاهده</span>
+                        </div>                        
+                    </a>
+                    
+
+                </div>
+            </div>
+            
+            <!-- Selector -->
+            <div class="lux_homes__ads_selector">
+                <div class="lux_homes__ads_selector_box">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="lux_homes__ads_selector_box">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+{% endblock content %}

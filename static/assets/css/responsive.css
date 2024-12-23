@@ -1,0 +1,480 @@
+@media only screen and (min-width: 1024px) {
+    .header {
+        height: 86.65px;
+        
+        justify-content: space-between;
+
+        padding: 0px 35px;
+    }
+
+    .header__right_menuOpener {
+        height: 45px;
+    }
+
+    .header__site_logo {
+        font-size: 48px;
+    }
+
+    .header__logo_img {
+        position: relative;
+        top: 3px;
+
+        width: 40px;
+    }
+
+    .header__user {
+        font-size: 45px;
+    }
+
+    .headlines {
+        height: 813px;
+
+        align-items: flex-end;
+
+        padding: 0px 65px;
+    }
+
+    .headlines__texts {
+        font-size: 48px;
+
+        position: relative;
+
+        left: 92px;
+    }
+
+    .headlines__search_bar {
+        position: relative;
+    }
+
+    .headlines__search_barIcon {
+        font-size: 25px;
+    }
+
+    .headlines__search_barline {    
+        right: 50px;
+    }
+
+    .headlines__search_barInput {
+        border-radius: 23px;
+
+        height: 81.25px;
+        width: 448.08px;
+
+        padding: 0px 60px 0px 10px;
+
+        font-size: 24px;
+    }
+
+    .headlines__icons {
+        gap: 20px;
+        
+    }
+
+    .zahedan {
+        margin-top: 100px;
+    }
+
+    .zahedan__headline {
+        font-size: 40px;
+        
+        align-self: flex-start;
+
+        position: relative;
+        right: 60px;
+    }
+
+    .zahedan__homes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        width: 100%;
+    }
+
+    .zahedan__homes_boxes {
+        gap: 30px;
+    }
+
+    .zahedan__home {
+        height: 663px;
+        width: 480px;
+
+        padding: 40px 33px;
+
+        border-radius: 30px;
+
+        justify-content: space-between;
+    }
+
+    .zahedan__home_namePrice {
+        font-size: 32px;
+        font-weight: 600;
+        color: #fff;
+
+        width: 92%;
+    }
+
+    .zahedan__home_price {
+        bottom: 12px;
+
+        font-size: 24px;
+    }
+
+    .zahedan__home_rooms {
+        width: 92%;
+
+        font-size: 30px;
+
+        top: 10px;
+
+    }
+
+    .zahedan__home_rooms_right {
+        gap: 50px;
+    }
+
+    .zahedan__home_eatingRooms,.zahedan__home_sleepingRooms {
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .room_text {
+        font-size: 10px;
+
+        align-self: flex-start;
+    }
+
+    .zahedan__home_size {
+        display: flex;
+        gap: 10px;
+    }
+
+    .zahedan__home_sizeLogo_div {
+        width: 25px;
+    }
+
+    .zahedan__homes_searching {
+        margin-top: 42px;
+    }
+
+    .suggestion {
+        margin-top: 50px;
+
+        padding: 70px 35px;
+
+        height: 831px;
+
+        justify-content: center;
+        gap: 130px;
+    }
+
+    .suggestion__headline {
+        font-size: 40px;
+
+        align-self: flex-start;
+    }
+
+    .suggestion__boxes {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .suggestion__boxeI {
+        width: 35%;
+        height: 351px;
+
+        padding: 50px 17px;
+
+        justify-content: flex-start;
+    }
+
+    .suggestion__boxeI_imgDiv {
+        width: 90px;
+    }
+
+    .suggestion__boxeI_texts {
+        font-size: 15px;
+    }
+
+    .suggestion__boxeI_headlineText {
+        font-size: 32px;
+    }
+
+    .suggestion__boxeI_bottomText {
+        position: relative;
+
+        top: 20px;
+    }
+
+    .suggestion__boxeI__white_padding {
+        padding: 50px 36px;
+    }
+
+    .specialSell {
+        margin-top: 0px;
+
+        padding: 70px 35px 53px;
+
+        background-color: var(--header_blue);
+
+        gap: 45px;
+    }
+
+    .specialSell__headline {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .specialSell__boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+
+        width: 100%;
+    }
+
+    .specialSell__boxI {
+        width: 302.07px;
+        height: 371.97px;
+
+        flex-grow: 1;
+
+        max-width: 327.5px;
+    }
+
+    .specialSell__boxI_topTextI {
+        line-height: 36px;
+
+        font-size: 24px;
+    }
+
+    .specialSell__boxI_topTextIII {
+        font-size: 16px;
+
+        line-height: 24px;
+    }
+
+    .specialSell__boxI_categories {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        margin-top: 18px;
+    }
+
+    .specialSell__boxI_categoryI {
+        gap: 25px;
+    }
+
+    .specialSell__boxI_category_icon {
+        font-size: 12px;
+    }
+
+    .specialSell__boxI_category_actualIcon {
+        font-size: 25px;
+    }
+
+    .specialSell__boxI--hidden {
+        display: flex;
+    }
+
+    .suggestion__link {
+        color: #fff;
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+
+    .lux_homes {
+        width: 100%;
+
+        padding: 70px 35px 150px;
+
+        gap: 50px;
+    }
+
+    .lux_homes__headline {
+        font-size: 40px;
+
+        align-self: flex-start;
+    }
+
+    .lux_homes__ads_Images {
+        justify-content: space-between;
+        width: 100%;
+
+        gap: 30px;
+    }
+
+    .lux_homes__adI_Image {
+        height: 515px;
+        flex-basis: 380px;
+
+        flex-grow: 1;
+    }
+
+    .lux_homes__adI_Image--hidden {
+        display: flex;
+    }
+
+    .lux_homes__adI_englishTextI {
+        font-size: 40px;
+        line-height: 48.8px;
+    }
+
+    .lux_homes__adI_englishTextII {
+        position: relative;
+
+        bottom: 10px;
+    }
+
+    .lux_homes__adI_englishTextIII {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .lux_homes__adI_Image:hover .lux_homes__adI_more {
+        height: 40px;
+        width: 98px;
+
+        margin-top: 20px;
+    } 
+
+    .lux_homes__ads_selector {
+        margin-top: 60px;
+    }
+
+    .lux_homes__ads_selector_box {
+        height: 40px;
+        width: 40px;
+
+        font-size: 25px;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: auto;
+
+        padding: 120px 0px 0px;
+
+        gap: 75px;
+
+        position: relative;
+    }
+
+    .footer__headline {
+        font-size: 48px;
+        color: #fff;
+    }
+
+    .footer__contacts {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 40px;
+
+        width: 100%;
+    }
+
+    .footer__address {
+        width: auto;
+     
+        gap: 20px;
+
+        font-size: 20px;
+    }
+
+    .footer__address_headline {
+        font-size: 24px;
+    }
+
+    .footer__address_ways {
+        gap: 10px;
+    }
+
+    .footer__address_locatin, .footer__address_calling, .footer__address_mail {
+        gap: 10px;
+    }
+
+    .footer__address_calling {
+        gap: 15px;
+    }
+
+    .footer__address_calling_icon {
+        position: relative;
+        right: 2px;
+    }
+
+    .footer__suggestion_box {
+        gap: 20px;
+
+        width: 580px;
+        height: 569.04px;
+
+        padding: 75px 40px;
+    }
+
+    .footer__suggestion_box_headline {
+        font-size: 32px;
+    }
+
+    .footer__suggestion_box_forms {
+        gap: 20px;
+    }
+
+    .footer__suggestion_box_emailForm {
+        width: inherit;
+        height: 71.51px;
+
+        font-size: 16px;
+    }
+
+    .footer__suggestion_box_questionForm {
+        width: inherit;
+        height: 181.85px;
+
+        font-size: 16px;
+    }
+
+    .footer__suggestion_box_send {
+        width: inherit;
+        height: 71.51px;
+
+        font-size: 32px;
+
+    }
+
+    .footer__menu {
+        height: 185px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+
+        background-color: #fff;
+    }
+
+    .options {
+        width: 111px;
+    }
+
+    .option--big {
+        height: 138px;
+        width: 138px;
+
+        bottom: 50px;
+    }
+
+    .options_img_dot {
+        width: 51px;
+    }
+}

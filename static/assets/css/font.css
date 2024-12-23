@@ -1,0 +1,72 @@
+/* IRTitr */
+@font-face {
+    font-family: IRTitr;
+    src: url(../font/irtitr/IRTitr.ttf);
+}
+
+/* AirbnbCereal */
+@font-face {
+    font-family: 'AirbnbCereal';
+    src: url(../font/AirbnbCereal/AirbnbCereal_W_Bk.otf);
+}
+
+/* IRANSansWeb */
+@font-face {
+    font-family: IRANSansWeb;
+    src: url(../font/IRANSansWeb/IRANSansWeb.ttf);
+}
+
+/* poppins */
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/poppins/Poppins-Black.ttf);
+    font-weight: 900;
+}

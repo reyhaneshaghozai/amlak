@@ -1,0 +1,851 @@
+@import url(reset.css);
+@import url(font.css);
+@import url(color.css);
+@import url(utility.css);
+@import url(responsive.css);
+
+.header {
+    width: 100%;
+    height: 58.84px;
+
+    background-color: var(--header_blue);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__right {
+    position: relative;
+}
+
+#header__right_menuInput {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.header__right_menuOpener {
+    height: 24px;
+}
+
+.header__right_menu {
+    display: none;
+    position: absolute;
+}
+
+#header__right_menuInput:checked ~ .header__right_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__site_logo {
+    font-size: 20px;
+    font-family: "IRTitr";
+}
+
+.header__logo_img {
+    width: 15px;
+}
+
+.headlines {
+    height: 426px;
+    width: 100%;
+
+    background-color: rgb(167,194,240);
+    color: #fff;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headlines__texts {
+    font-size: 22px;
+    font-family: "IRTitr";
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.headlines__textI {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.headlines__search_bar {
+    position: relative;
+}
+
+.headlines__search_barIcon {
+    position: absolute;
+
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    color: var(--icon_black);
+
+}
+
+.headlines__search_barline {
+    position: absolute;
+
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-left: 1px solid var(--primary_grey);
+
+    height: 80%;
+}
+
+.headlines__search_barInput {
+    border: 1px solid #757575;
+    border-radius: 30px;
+
+    height: 39.51px;
+    width: 252px;
+
+    padding: 0px 45px 0px 10px;
+
+    font-family: "IRANSansWeb";
+    font-weight: 400;
+}
+
+.headlines__icons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.headlines__icon {
+    height: 41.59px;
+    width: 40px;
+
+    background-color: #fff;
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    color: #000000;
+}
+
+.headlines__icon_text {
+    font-size: 8px;
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+.zahedan {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.zahedan__headline {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary_blue);
+}
+
+.zahedan__homes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.zahedan__homes_boxes {
+    display: flex;
+    gap: 10px;
+
+    width: 100%;
+    overflow: auto;
+}
+
+.zahedan__home {
+    height: 231px;
+    width: 172px;
+
+    padding: 0px 13px;
+
+    background-color: var(--box_blue);
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.zahedan__home_imgDiv {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.zahedan__home_img {
+    width: 100%;
+}
+
+.zahedan__home_namePrice {
+    font-size: 14px;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    position: relative;
+
+    top: 2px;
+}
+
+.zahedan__home_price {
+    position: relative;
+
+    bottom: 2px;
+
+    font-family: "AirbnbCereal";
+    font-weight: 900;
+}
+
+.zahedan__home_rooms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: 12px;
+    color: #fff;
+
+    position: relative;
+    top: 3px;
+
+}
+
+.zahedan__home_rooms_right {
+    display: flex;
+    gap: 20px;
+}
+
+.room_text {
+    font-family: "AirbnbCereal";
+}
+
+.zahedan__home_roomsIcons {
+    color: #FE8A71;
+}
+
+.zahedan__home_size {
+    display: flex;
+    gap: 5px;
+
+    font-family: "AirbnbCereal";
+    font-size: 10px;
+}
+
+.zahedan__home_sizeLogo_div {
+    width: 9px;
+}
+
+.zahedan__home_sizeLogo {
+    width: 100%;
+}
+
+.zahedan__homes_searching {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.zahedan__homes_searchingI, .zahedan__homes_searchingII, .zahedan__homes_searchingIII, .zahedan__homes_searchingIV {
+    height: 12px;
+    width: 12px;
+
+    border: 0.5px solid var(--primary_grey);
+    border-radius: 100%;
+
+    cursor: pointer;
+}
+
+.zahedan__homes_searchingIII {
+    background-color: #104EB8;
+
+    border: none;
+}
+
+.suggestion {
+    margin-top: 10px;
+    padding: 70px 53px;
+
+    background-color: #ECF4FD;
+
+    width: 100%;
+
+    color: var(--headline_blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.suggestion__headline {
+    font-size: 24px;
+    font-weight: 700;
+
+    align-self: flex-start;
+}
+
+.suggestion__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+
+    color: #fff;
+}
+
+.suggestion__boxeI {
+    width: 100%;
+    height: 233px;
+
+    border: none;
+
+    background: #fff;
+
+    color: var(--headline_blue);
+
+    border: 7px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 0px 20px;
+}
+
+.suggestion__boxeI:hover {
+
+    background: linear-gradient(to bottom, #295FB7, #25356A);
+
+    border: 7px solid #4A43EC;
+
+    color: #fff;
+}
+
+.suggestion__boxeI_imgDiv {
+    width: 50px;
+}
+
+.suggestion__boxeI_img {
+    width: 100%;
+}
+
+.suggestion__boxeI_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    font-size: 13px;
+}
+
+.suggestion__boxeI_headlineText {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.suggestion__boxeI__white_padding {
+    padding: 0px 32px;
+
+}
+
+.specialSell {
+    margin-top: 10px;
+    padding: 70px 53px 53px;
+
+
+    width: 100%;
+
+    color: var(--headline_blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.specialSell__headline {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2959AC;
+
+    align-self: flex-start;
+}
+
+.specialSell__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    width: 100%;
+}
+
+.specialSell__boxI {
+    width: 100%;
+    height: 375px;
+
+    color: #000000;
+
+    background-color: var(--light_blue);
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialSell__boxI:hover {
+    color: #fff;
+
+    background: linear-gradient(to bottom, #295FB7, #25356A);
+
+    box-shadow: 0px 10px 25px 0px #00000066;
+}
+
+.specialSell__boxI_imgDiv {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.specialSell__boxI_img {
+    width: 100%;
+}
+
+.specialSell__boxI_topTexts {
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+
+    width: 100%;
+}
+
+.specialSell__boxI_topTextI {
+    line-height: 27px;
+
+    font-weight: 500;
+    font-family: "poppins";
+    font-size: 18px;
+
+    align-self: flex-end;
+}
+
+.specialSell__boxI_topTextII {
+    color: #27498E;
+    font-size: 14px;
+
+    line-height: 23.13px;
+}
+
+.specialSell__boxI:hover .specialSell__boxI_topTextII {
+    color: #fff;
+}
+
+.specialSell__boxI_topTextIII {
+    align-self: flex-end;
+
+    color: #FFAC33;
+    font-size: 14px;
+
+
+    line-height: 23.13px;
+}
+
+.specialSell__boxI_categories {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+.specialSell__boxI_categoryI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    font-size: 10px;
+}
+
+.specialSell__boxI_category_icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+.specialSell__boxI_category_actualIcon {
+    font-size: 14px;
+}
+
+.specialSell__boxI--hidden {
+    display: none;
+}
+
+.suggestion__link {
+    align-self: center;
+
+    color: #295FB7;
+    font-size: 14px;
+}
+
+.lux_homes {
+    width: 100%;
+
+    padding: 70px 53px;
+
+    background-color: var(--light_blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.lux_homes__headline {
+    color: #2959AC;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lux_homes__ads {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.lux_homes__ads_Images {
+    display: flex;
+    justify-content: center;
+}
+
+
+.lux_homes__adI_Image {
+    height: 433.68px;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    color: #fff;
+
+    background-image: url(../img/ads/spacejoy.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.lux_homes__adI_ImageIII {
+    background-image: url(../img/ads/sandra-rei.png);
+}
+
+.lux_homes__adI_englishText, .lux_homes__adI_more {
+    display: none;
+}
+
+.lux_homes__adI_englishTextI {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.28px;
+}
+
+.lux_homes__adI_englishTextII {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.08px;
+}
+
+.lux_homes__adI_englishTextIII {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.52px;
+}
+
+.lux_homes__adI_Image:hover .lux_homes__adI_englishText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "poppins";
+}
+
+.lux_homes__adI_Image:hover .lux_homes__adI_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 84px;
+
+    background-color: #295FB7;
+    
+    color: #fff;
+} 
+
+.lux_homes__adI_Image--hidden {
+    display: none;
+}
+
+.lux_homes__ads_selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.lux_homes__ads_selector_box {
+    height: 30px;
+    width: 30px;
+
+    border-radius: 100%;
+
+    background-color: #295FB7;
+
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    width: 100%;
+
+    padding: 70px 0px 0px;
+
+    background-color: #104EB8;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__headline {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 100%;
+
+    padding: 0px 53px;
+}
+
+.footer__address {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-family: "poppins";
+    font-size: 14px;
+}
+
+.footer__address_headline {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "IRANSansWeb";
+}
+
+.footer__address_ways {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__address_locatin, .footer__address_calling, .footer__address_mail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__address_calling {
+    gap: 10px;
+}
+
+.footer__address_calling_icon {
+    position: relative;
+    right: 2px;
+}
+
+.footer__address_locatinText {
+    font-family: "IRANSansWeb";
+}
+
+.footer__suggestion_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 284.48px;
+
+    padding: 20px;
+
+    background-color: #fff;
+}
+
+.footer__suggestion_box_headline {
+    color: var(--header_blue);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer__suggestion_box_forms {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__suggestion_box_emailForm {
+    width: inherit;
+    height: 39.08px;
+
+    padding: 0px 10px;
+
+    background-color: #D0D0D0;
+}
+
+.footer__suggestion_box_emailForm::placeholder, .footer__suggestion_box_questionForm::placeholder {
+    color: #575757;
+}
+
+.footer__suggestion_box_questionForm {
+    width: inherit;
+    height: 73.47px;
+
+    padding: 5px 10px 10px;
+
+    border: none;
+    outline: none;
+
+    font-family: "IRANSansWeb";
+
+    background-color: #D0D0D0;
+}
+
+.footer__suggestion_box_send {
+    width: inherit;
+    height: 39.08px;
+
+    outline: none;
+    border: none;
+
+    color: #fff;
+
+    font-family: "IRANSansWeb";
+
+    background-color: #295FB7;
+
+    cursor: pointer;
+}
+
+.footer__menu {
+    height: 72px;
+    width: 100%;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-color: #DCEBF8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0px 30px;
+
+}
+
+.options {
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    flex-shrink: 0;
+}
+
+.options_img {
+    width: 100%;
+}
+
+.option--big {
+    height: 64px;
+    width: 64px;
+
+    background-color: #4A43EC;
+
+    border-radius: 100%;
+
+    position: relative;
+
+    bottom: 20px;
+}
+
+.options_img_dot {
+    width: 24px;
+}

@@ -1,0 +1,251 @@
+@media only screen and (min-width: 1024px) {
+    .help {
+        gap: 90px;
+    
+        margin-top: 50px;
+
+        padding: 0px 35px;
+    }
+    
+    .help__headline {        
+        font-size: 40px;
+    }
+    
+    .help__forms {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .help__form_name {
+        width: 377px;
+        flex-grow: 1;
+    }
+
+    .help__form_phone_number {
+        width: 303px;
+        flex-grow: 1;
+    }
+
+    .help__form_land {
+        width: 218px;
+        flex-grow: 1;
+    }
+    
+    .help__form_land_select, .help__form_name_input, .help__form_phone_numberInput {
+        width: 100%;
+    }
+    
+    .help__form_land_select {
+        height: 76.06px;
+    }
+    
+    .help__form_name_input, .help__form_phone_numberInput {
+        height: 76.06px;
+    }
+    
+    .location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    
+        margin-top: 70px;
+
+        padding: 0px 35px;
+    }
+
+    .location__headline {
+        align-self: flex-start;
+
+        font-size: 40px;
+    }
+    
+    .location__forms {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px;
+    
+        width: 100%;
+    }
+    
+    .location__form_state, .location__form_city, .location__form_price, .location__form_size {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        width: 451px;
+        flex-grow: 1;
+    
+        color: #878686; 
+        font-weight: 700;
+    }
+    
+    .location__form_state_input, .location__form_city_input, .location__form_price_input, .location__form_size_input {
+        width: 100%;
+        height: 76.06px;
+    
+        border: 1px solid var(--secondary_grey);
+        border-radius: 16px;
+    
+        padding: 0px 20px;
+    }
+    
+    .for_desktop {
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-top: 80px;
+
+        padding: 0px 35px;
+    }
+    
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        margin-top: 0px;
+
+        padding: 0;
+    }
+    
+    .facilities__headline {
+        font-size: 40px;
+    }
+    
+    .facilities__examples {
+        gap: 25px;
+    }
+    
+    .facilities__boxes {
+        height: 76px;
+    
+        padding: 15px 15px 10px;
+
+        border: 1px solid #F3F4F5;
+    }
+
+    .facilities__boxesI {
+        width: 83.43px;
+    }
+    
+    .facilities__boxesII {
+        width: 80.78px;
+    }
+
+    .facilities__boxesIII {
+        width: 117.86px;
+    }
+    
+    .rooms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+        margin-top: 0px;
+
+        padding: 0px;
+    }
+    
+    .rooms__headline {
+        font-size: 40px;
+    }
+    
+    .rooms__numbers {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .rooms__more, .rooms__numbers_boxes {
+        height: 77.8px;
+    
+        font-size: 32px;
+    }
+    
+    .rooms__more {
+        width: 114.81px;
+    }
+    
+    .rooms__numbers_boxes {
+        width: 83.29px;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    
+        margin-top: 100px;
+    }
+    
+    .button {
+        height: 83px;
+    
+        border-radius: 15px;
+        
+        font-size: 32px;
+    }
+    
+    .buttons__buttonI {
+        width: 394px;
+    }
+    
+    .buttons__buttonII {
+        width: 414px;
+    }
+    
+    .notice {    
+        top: 458px;
+    
+        height: 614px;
+        width: 706px;
+    
+        padding-bottom: 40px;
+        
+        border-radius: 16px;
+    
+        display: none;/* Turn this to flex */
+        gap: 80px;
+    }
+    
+    .notice__texts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    
+        color: var(--overused_blue);
+    }
+
+    .notice__textI {
+        font-size: 36px;
+    }
+
+    .notice__textII {
+        font-size: 40px;
+    }
+    
+    .notice__small_text {
+        font-size: 32px;
+    }
+    
+    .notice__button {    
+        width: 413px;
+        height: 73px;
+        
+        font-size: 32px;
+    }
+    
+    .footer {        
+        margin-top: 30px;
+    }
+
+    .footer__menu {    
+        background-color: #DCEBF8;    
+    }
+}

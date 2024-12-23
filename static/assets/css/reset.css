@@ -1,0 +1,32 @@
+/* reset css */
+* /* All the content in the webpage (Including <body> and <ul>) */, *::after /* All the ::after  */,*::before /* All the ::before */{
+    margin: 0;/* Have no margin value without me entering it */
+    padding: 0;/* Have no padding value without me entering it */
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "IRANSansWeb";
+    direction: rtl;
+
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    font-family: "IRANSansWeb";
+  }
+
+  button {
+    border: none;
+    outline: none;
+
+    font-family: "IRANSansWeb";
+  }

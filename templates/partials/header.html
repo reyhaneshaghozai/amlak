@@ -1,0 +1,30 @@
+{% load static  %}
+   <!-- Header -->
+    <header class="header container">
+
+        <!-- menu -->
+        <div class="header__right">
+            <input type="checkbox" id="header__right_menuInput">
+
+            <!-- menu opener -->
+            <label for="header__right_menuInput"><i class="fa-solid fa-bars header__right_menuOpener"></i></label> 
+
+            <ul class="header__right_menu">
+                <li>
+                    <span>Hello</span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Amelk Logo -->
+        <div class="header__site_logo">
+            <span>Amelk</span>
+            <img src="{% static 'assets/img/amelk_logo.png' %}" alt="Amelk Logo" class="header__logo_img">
+        </div>
+        
+        <!-- user account -->
+        <div class="header__user">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+    </header>

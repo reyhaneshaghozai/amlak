@@ -1,0 +1,73 @@
+@media only screen and (min-width: 1024px){
+    .selling_page {
+        margin-top: 80px;
+    
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        padding: 0px 70px;
+
+    }
+    
+    .selling_page_icon {
+        font-size: 40px;
+    }
+
+    .selling_page__headline {
+        font-size: 40px;
+    }
+    
+    .assurance {
+        gap: 45px;
+    
+        margin-top: 150px;
+    
+        font-size: 40px;
+
+        padding: 0px 42px 0px 0px;
+
+    }
+    
+    .assurance__textI {
+        margin-right: 0px;
+
+        align-self: center;
+
+        font-size: 40px;
+    }
+    
+    .assurance__textII {
+        font-size: 40px;
+    }
+    
+    .assurance__textIII {
+        font-size: 39px;
+    }
+    
+    .confirm {
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 115px;
+    
+    }
+    
+    .confirm__button {
+        width: 571px;
+        height: 93px;
+    
+        font-size: 40px;                
+    }
+    
+    
+    .footer {
+        margin-top: 380px;
+    
+        background-color: transparent;
+    }
+
+    .footer__menu {
+        background-color: #E1EFFC;
+    }
+}

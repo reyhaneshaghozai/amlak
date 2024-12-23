@@ -1,0 +1,95 @@
+{% load static %}
+    <!-- Footer -->
+    <footer class="footer container">
+
+        <!-- headline -->
+        <span class="footer__headline">املاکی برای تو</span>
+
+        <!-- Contact -->
+        <div class="footer__contacts">
+
+            <!-- adress -->
+            <div class="footer__address">
+                <!-- address headline -->
+                <span class="footer__address_headline">راه های ارتباطی</span>
+                
+                <!-- Small Texts -->
+                <div class="footer__address_ways">
+                    <!-- 1st -->
+                    <div class="footer__address_locatin">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span class="footer__address_locatinText">زاهدان خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div class="footer__address_calling">
+                        <i class="footer__address_calling_icon fa-solid fa-mobile"></i>
+                        <span>021 - 3943943</span>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="footer__address_mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>myproperty@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Suggestion Box -->
+            <div class="footer__suggestion_box container">
+                <!-- Headline -->
+                <span class="footer__suggestion_box_headline">نیاز به مشاوره دارید؟ </span>
+
+                <!-- The forms -->
+                <div class="footer__suggestion_box_forms">
+                    
+                    <!-- Email form -->
+                    <input type="email" placeholder="ایمیل خود را وارد کنید" class="footer__suggestion_box_emailForm">
+
+                    <!-- Question form -->
+                    <textarea type="text" placeholder="سوال خود را بنویسید " class="footer__suggestion_box_questionForm"></textarea>
+                
+                    <button class="footer__suggestion_box_send">ارسال</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="footer__menu">
+            <!-- 1st -->
+            <a href="#">
+                <li class="options">
+                    <img src="{% static 'assets/img/footer_menu/moeny_bagI.png' %}" alt="" class="options_img">
+                </li>
+            </a>
+
+            <!-- 2nd -->
+            <a href="#">
+                <li class="options">
+                    <img src="{% static 'assets/img/footer_menu/cardII.png' %}" alt="" class="options_img">
+                </li>
+            </a>
+
+            <!-- 3rd -->
+            <a href="#">
+                <li class="options option--big">
+                    <img src="{% static 'assets/img/footer_menu/icon.png' %}" alt="" class="options_img options_img_dot">
+                </li>
+            </a>
+
+            <!-- 4th -->
+            <a href="#">
+                <li class="options">
+                    <img src="{% static 'assets/img/footer_menu/buldingIV.png' %}" alt="" class="options_img">
+                </li>
+            </a>
+
+            <!-- 5th -->
+            <a href="#">
+                <li class="options">
+                    <img src="{% static 'assets/img/footer_menu/money_lendV.png' %}" alt="" class="options_img">
+                </li>
+            </a>
+        </ul>
+    </footer>
+

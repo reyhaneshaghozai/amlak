@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import PhoneNumberForm
-from .models import PhoneNumber
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.models import User
+from .forms import PhoneNumberForm , SignupForm
+from .models import PhoneNumber,Signup
 import random
 
 def collect_phone_number(request):
@@ -27,33 +29,47 @@ def collect_phone_number(request):
 
 
 def verify_otp(request, phone_number):
-    """
-    ویو تایید کد امنیتی (OTP)
-    """
     try:
-        # دریافت رکورد شماره تلفن از دیتابیس
         phone_record = PhoneNumber.objects.get(phone_number=phone_number)
     except PhoneNumber.DoesNotExist:
-        return HttpResponse("شماره تلفن معتبر نیست.")  # خطای شماره تلفن نامعتبر
+        return HttpResponse("شماره تلفن معتبر نیست.") 
 
-    # کد امنیتی از دیتابیس
     otp_code = phone_record.otp_code
 
     if request.method == "POST" and 'submit_otp' in request.POST:
-        entered_otp = request.POST.get('otp_code')  # دریافت کد واردشده توسط کاربر
+        entered_otp = request.POST.get('otp_code') 
 
-        # بررسی تطابق کد
         if otp_code == entered_otp:
             phone_record.entered_otp = entered_otp
             phone_record.save()
 
-            # تایید موفق و هدایت به صفحه خانه
-            return redirect('home')  # تغییر به صفحه دلخواه شما
+            return redirect('home') 
         else:
             return HttpResponse("کد امنیتی اشتباه است. لطفاً دوباره تلاش کنید.")
 
-    # ارسال اطلاعات به قالب
     return render(request, 'authentication/verify_otp.html', {
         'phone_number': phone_number,
-        'otp_code': otp_code,  # کد امنیتی برای نمایش در قالب
+        'otp_code': otp_code, 
     })
+
+def signup(request):
+    form = SignupForm()
+    error = None
+    if request.method == "POST":
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            if cd['password1'] == cd['password2']:
+                if not User.objects.filter(username=cd['phone_number']).exists():
+                    user = User.objects.create_user(
+                        username=cd['phone_number'],
+                        email=cd['email'],
+                        password=cd['password1'],
+                    )
+                    user.save()
+                    return redirect('home')
+                else:
+                    error = "شماره تلفن قبلاً ثبت شده است."
+            else:
+                error = "رمز عبور و تکرار آن یکسان نیستند."
+    return render(request, 'authentication/signup.html', {'form': form, 'error': error})

@@ -354,7 +354,7 @@
         <div class="suggestion__boxes">
 
             <!-- 1st box -->
-            <a href="#" class="suggestion__boxeI">
+            <a href="{% url 'buy_property' %}" class="suggestion__boxeI">
 
                 <!-- img -->
                 <div class="suggestion__boxeI_imgDiv">
@@ -371,7 +371,7 @@
             </a>
 
             <!-- 2nd box -->
-            <a href="selling_landIII.html" class="suggestion__boxeI">
+            <a href="{% url 'sell_property' %}" class="suggestion__boxeI">
 
                 <!-- img -->
                 <div class="suggestion__boxeI_imgDiv">
@@ -388,7 +388,7 @@
             </a>
 
             <!-- 3rd box -->
-            <a href="renting_landIV.html" class="suggestion__boxeI suggestion__boxeI__white_padding">
+            <a href="{% url 'rent_property' %}" class="suggestion__boxeI suggestion__boxeI__white_padding">
                 <!-- img -->
                 <div class="suggestion__boxeI_imgDiv">
                     <img src="{% static 'assets/img/transactions/lending_land.png' %}" alt="Renting a Land" class="suggestion__boxeI_img">

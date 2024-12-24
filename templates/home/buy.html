@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خرید یک ملک</title>
+</head>
+<body>
+    <h1>خرید یک ملک</h1>
+    <form method="post">
+        {% csrf_token %}
+        
+        <!-- نمایش فرم به همراه خطاها -->
+        {{ form.as_p }}
+        
+        <!-- نمایش خطاهای کلی فرم -->
+        {% if form.errors %}
+            <ul style="color: red;">
+                {% for field, errors in form.errors.items %}
+                    <li><strong>{{ field|default:"عمومی" }}:</strong> {{ errors|join:", " }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        <button type="submit">ارسال درخواست</button>
+    </form>
+</body>
+</html>

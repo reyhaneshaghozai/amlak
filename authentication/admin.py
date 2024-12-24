@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import PhoneNumber,Signup
+from . models import PhoneNumber,Signup 
 
 
 admin.site.register(PhoneNumber)

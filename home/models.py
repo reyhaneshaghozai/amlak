@@ -13,13 +13,6 @@ class PropertyRequest(models.Model):
     city = models.CharField(max_length=50, verbose_name="شهر/بخش")
     budget = models.DecimalField(max_digits=12, decimal_places=2, verbose_name="بودجه")
     area = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="متراژ", null=True, blank=True)
-    AMENITY_CHOICES = [
-        ('none', 'هیچکدام'),
-        ('parking', 'پارکینگ'),
-        ('elevator', 'آسانسور'),
-        ('storage', 'انباری'),
-        ('garden', 'باغ'),
-    ]
     amenities = models.TextField(max_length=255, verbose_name="امکانات")
     bedrooms = models.PositiveSmallIntegerField(verbose_name="تعداد اتاق خواب", null=True, blank=True)
     description = models.TextField(null=True, blank=True, verbose_name="توضیحات")

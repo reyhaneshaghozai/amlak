@@ -17,7 +17,7 @@ class PropertyRequestForm(forms.ModelForm):
     
     class Meta:
         model = PropertyRequest
-        fields = ['property_type', 'full_name', 'contact_number', 'province', 'city', 'budget', 'area', 'amenities', 'bedrooms', 'description']
+        fields = ['property_type', 'full_name', 'contact_number', 'province', 'city', 'budget', 'area', 'bedrooms', 'description']
 
     def __init__(self, *args, **kwargs):
         super(PropertyRequestForm, self).__init__(*args, **kwargs)

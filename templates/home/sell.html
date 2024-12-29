@@ -5,6 +5,10 @@
 
     </head>
     <body>
-
+               {% if user.is_authenticated %}
+               <butten>ثبت درخواست </butten>
+                   {% else %}
+               <butten>ثبت درخواست </butten>
+                   {% endif %}
     </body>
 </html>

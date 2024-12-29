@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم ثبت ملک</title>
+    
+</head>
+<body>
+    <h1>ملک برای اجاره دارم</h1>
+    <form method="POST" action="{% url 'rental_property_view' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ثبت</button>
+    </form>
+</body>
+</html>

@@ -9,11 +9,7 @@
     <h1>خرید یک ملک</h1>
     <form method="post">
         {% csrf_token %}
-        
-        <!-- نمایش فرم به همراه خطاها -->
         {{ form.as_p }}
-        
-        <!-- نمایش خطاهای کلی فرم -->
         {% if form.errors %}
             <ul style="color: red;">
                 {% for field, errors in form.errors.items %}

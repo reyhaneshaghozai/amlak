@@ -1,0 +1,219 @@
+body {
+    background-image: url(../img/background/sign_up.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    position: relative;
+}
+
+body::after {
+
+    content: "";
+    position: fixed; /* Ensures it covers the viewport */
+
+    top: 0;
+    left: 0; /* Ensures it starts from the left edge */
+
+    z-index: -4;
+
+    width: 100%; /* Covers the full width */
+    height: 100vh; /* Covers the full height of the viewport */
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Lato";
+
+    padding-top: 70px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 45px;
+}
+
+.forms__form_holder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.forms__form_text {
+    font-size: 16px;
+    color: #fff;
+}
+
+.forms__form {
+    width: 100%;
+    height: 55px;
+
+    background-color: #D8D8DD;
+
+    border: 1px solid #fff;
+    border-radius: 6px;
+
+    padding: 0px 10px;
+}
+
+.forms__form_holder_again {
+    position: relative;
+
+    width: 100%;
+}
+
+.forms__form--more_padding {
+    padding: 0px 40px 0px 10px;
+}
+
+.forms__form_icon {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #A09F99;
+}
+
+.forms__send {
+    width: 100%;
+    height: 55px;
+
+    color: #fff;
+
+    background-color: #617C99;
+
+    font-size: 18px;
+
+    box-shadow: 0px 2.77px 2.21px 0px #000;
+
+    margin-top: 25px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.forms__send:focus {
+    border: 4px solid #325D8C;
+}
+
+.forms__password_checks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    color: #fff;
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+.forms__password_checks_forgotton {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.forms__password_remember {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#remember {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.forms__password_remember_slide {
+    height: 24px;
+    width: 42.95px;
+
+    background-color: #A09F99;
+
+    border-radius: 50px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.forms__password_remember_slide::before {
+    content: "";
+
+    position: absolute;
+
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 18.95px;
+    width: 18.95px;
+
+    background-color: #fff;
+
+    border-radius: 100%;
+}
+
+#remember:checked ~ .forms__password_remember_slide::before {
+    left: auto;
+    right: 2px;
+}
+
+.sign_check {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+
+    position: relative;
+
+    padding-bottom: 100px;
+}
+
+/* .sign_check::after {
+    content: "";
+
+    position: absolute;
+
+    height: 396px;
+    width: 100%;
+
+    background: linear-gradient(to bottom, #1717177A 20%, #0A0A0A 65%);
+
+    z-index: -5;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+} */
+
+.sign_check__textI {
+    color: #fff;
+}
+
+.sign_check__textII {
+    color: #536A83;
+}

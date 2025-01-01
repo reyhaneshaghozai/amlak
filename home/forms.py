@@ -10,10 +10,8 @@ class PropertyRequestForm(forms.ModelForm):
         ]
     amenities = forms.MultipleChoiceField(choices=AMENITY_CHOICES,widget=forms.CheckboxSelectMultiple,label="امکانات")
     class Meta:
-
         model = PropertyRequest
         fields = ['property_type', 'full_name', 'contact_number', 'province', 'city', 'budget', 'bedrooms', 'area', 'description','amenities']
-
 
     def __init__(self, *args, **kwargs):
         super(PropertyRequestForm, self).__init__(*args, **kwargs)

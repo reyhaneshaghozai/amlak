@@ -1,0 +1,82 @@
+{% load static  %}
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelk - Login</title>
+    <!-- css address -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"><!-- For access to font.css, color.css, reset.css, etc.... -->
+    <link rel="stylesheet" href="{% static 'assets/css/loginVI.css' %}">
+    
+    <!-- Responsive -->
+
+    <!-- FontAwsome address -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- The Headline of the Page -->
+    <section class="login">
+        <span>Login</span>
+    </section>
+
+    <!-- Forms -->
+    <section class="forms container">
+        <form method="post" action="{% url 'authentication:login' %}">
+        {% csrf_token %}
+        <!-- 1st form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text">شماره موبایل</span>
+            {{ form.phone_number }}
+            {% if form.phone_number.errors %}
+                <div class="forms__errors">
+                    {{ form.phone_number.errors.0 }}
+                </div>
+            {% endif %}
+        </div>
+        <!-- 2nd form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text">پسورد</span>
+
+            <div class="forms__form_holder_again">
+                <!-- Icon -->
+                <i class="forms__form_icon fa-regular fa-eye-slash"></i>
+                
+                <!-- form -->
+                {{ form.password }}
+            </div>
+
+        </div>
+
+        <div class="forms__password_checks">
+
+            <a href="{% url 'authentication:register' %}" class="forms__password_checks_forgotton">فراموشی رمز </a>
+
+            <div class="forms__password_remember">
+                <span>مرا بخاطر بسپار</span>
+
+                <input type="checkbox" id="remember">
+                <label for="remember" class="forms__password_remember_slide"></label>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Checking if the Person signed up before or not -->
+    <section class="sign_check container">
+        <button class="forms__send" type="submit">ورود</button>
+    </form>
+        <div>
+            <a href="#" class="sign_check__textI">هنوز ثبت نام نکرده اید؟</a>
+            <a href="{% url 'authentication:register' %}" class="sign_check__textII">ثبت نام</a>    
+        </div>
+        
+    </section>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+</html>

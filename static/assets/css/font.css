@@ -4,10 +4,21 @@
     src: url(../font/irtitr/IRTitr.ttf);
 }
 
+@font-face {
+    font-family: armita;
+    src: url(../font/armita/A\ Armita\ Black.ttf);
+}
+
 /* AirbnbCereal */
 @font-face {
     font-family: 'AirbnbCereal';
     src: url(../font/AirbnbCereal/AirbnbCereal_W_Bk.otf);
+}
+
+/* Lato */
+@font-face {
+    font-family: Lato;
+    src: url(../font/lato/Lato-Regular.ttf);
 }
 
 /* IRANSansWeb */

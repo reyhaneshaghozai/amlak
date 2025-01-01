@@ -1,0 +1,137 @@
+.more_land_page {
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.lands__landI {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 15px 10px 7px;
+
+    background-color: #F3F9FF;
+
+    height: 101px;
+    width: 277px;
+
+    border-radius: 6.32px;
+
+    color: var(--overused_blue);
+}
+
+.lands__landI--hidden {
+    display: none;
+}
+
+.lands__land_img_div {
+    width: 56.92px;
+
+    border-radius: 6.32px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+.lands__land_img_div--hidden {
+    display: none;
+}
+
+.lands__land_img {
+    width: 100%;
+}
+
+.lands__landI_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lands__landI_price_type {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.lands__landI_price {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "armita";
+}
+
+.lands__landI_address_more {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.lands__landI_address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lands__landI_address_text {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.lands__landI_more {
+    display: none;
+
+    background-color: #298DF3;
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.lands__landI_icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.lands__landI_icon_box {
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #0060F1;
+}
+
+.lands__landI_icons_splitting {
+    height: 20px;
+    width: 1px;
+
+    background-color: #C2C7CC;
+}
+
+.distance {
+    margin-top: 150px;
+}

@@ -1,3 +1,8 @@
+/* This is so the Under Footer only appears in the Desktop of ALL pages */
+.under_footer {
+    display: none;
+}
+
 @media only screen and (min-width: 1024px) {
     .header {
         height: 86.65px;
@@ -9,6 +14,11 @@
 
     .header__right_menuOpener {
         height: 45px;
+    }
+
+    .header__right_menu {
+        top: 70px;
+        right: -35px;
     }
 
     .header__site_logo {
@@ -26,12 +36,21 @@
         font-size: 45px;
     }
 
+    .header__user_menu {
+        top: 81px;
+        left: -33px;
+    }
+
     .headlines {
         height: 813px;
 
         align-items: flex-end;
 
         padding: 0px 65px;
+
+        background-image: url(../img/background/building.png);
+        background-size: 147% auto;
+        background-position: -122px 0px;
     }
 
     .headlines__texts {
@@ -361,13 +380,15 @@
 
     .footer {
         width: 100%;
-        height: auto;
+        height: 1193.42px;
 
         padding: 120px 0px 0px;
 
         gap: 75px;
+    }
 
-        position: relative;
+    .footer::before {
+        background-size: 100% 100%;
     }
 
     .footer__headline {
@@ -456,7 +477,7 @@
         height: 185px;
         width: 100%;
 
-        display: flex;
+        display: none;
         justify-content: space-around;
         gap: 30px;
 
@@ -476,5 +497,65 @@
 
     .options_img_dot {
         width: 51px;
+    }
+
+
+    .under_footer {
+        height: 208px;
+        width: 100%;
+
+        background-color: #fff;
+
+        position: relative;
+
+        bottom: 10px;
+
+        padding: 20px 200px 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .under_footer__top {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .under_footer__top_right {
+        display: flex;
+        gap: 20px;
+    }
+
+    .under_footer__top_right_links {
+        color: var(--icon_black);
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "poppins";
+        text-transform: uppercase;
+    }
+
+    .under_footer__top_left {
+        color: #295FB7;
+        font-size: 20px;
+        font-weight: 600;
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .under_footer__top_leftIcon {
+        font-size: 24px;
+    }
+
+    .under_footer__bottom {
+        color: #000;
+        font-size: 14px;
+        font-family: "poppins";
     }
 }

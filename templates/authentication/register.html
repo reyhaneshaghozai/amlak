@@ -1,0 +1,122 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelk - ثبت نام</title>
+    <!-- css address -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"><!-- For access to font.css, color.css, reset.css, etc.... -->
+    <link rel="stylesheet" href="{% static 'assets/css/sign_upV.css' %}">
+    
+
+    <!-- Responsive -->
+
+    <!-- FontAwsome address -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- The Headline of the Page -->
+    <section class="sign_up">
+        <span>Signup</span>
+    </section>
+
+<!-- Forms -->
+<section class="forms container">
+    <form method="POST" action="{% url 'authentication:register' %}">
+        {% csrf_token %}
+        <!-- 1st form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text">شماره موبایل</span>
+            <input type="text" name="phone_number" class="forms__form" value="{{ form.phone_number.value }}">
+            {% if form.phone_number.errors %}
+                <div class="forms__errors">
+                    {{ form.phone_number.errors.0 }}
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- 2nd form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text">پسورد</span>
+            <div class="forms__form_holder_again">
+                <!-- Icon -->
+                <i class="forms__form_icon fa-regular fa-eye-slash"></i>
+                <!-- form -->
+                <input type="password" name="password1" class="forms__form forms__form--more_padding" value="{{ form.password1.value }}">
+                {% if form.password1.errors %}
+                    <div class="forms__errors">
+                        {{ form.password1.errors.0 }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- 3rd form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text"> تکرار پسورد</span>
+            <div class="forms__form_holder_again">
+                <!-- Icon -->
+                <i class="forms__form_icon fa-regular fa-eye-slash"></i>
+                <!-- form -->
+                <input type="password" name="password2" class="forms__form forms__form--more_padding" value="{{ form.password2.value }}">
+                {% if form.password2.errors %}
+                    <div class="forms__errors">
+                        {{ form.password2.errors.0 }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- 4th form -->
+        <div class="forms__form_holder">
+            <span class="forms__form_text">ایمیل</span>
+            <input type="email" name="email" class="forms__form" value="{{ form.email.value }}">
+            {% if form.email.errors %}
+                <div class="forms__errors">
+                    {{ form.email.errors.0 }}
+                </div>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="forms__send">ثبت نام</button>
+    </form>
+</section>
+    
+    <!-- JS, This section must appear when ارسال is clicked on -->
+    <section class="sending_code container">
+
+        <div class="sending_code__code_announcment">
+            <span class="sending_code__code_announcment_text">کدچهار رقمی وارد کنید</span>
+
+            <div class="sending_code__code">
+                <!-- Box 1 -->
+                <input type="number" required maxlength="1" class="sending_code__code_boxes">
+
+                <!-- Box 2 -->
+                <input type="number" required maxlength="1" class="sending_code__code_boxes">
+
+                <!-- Box 3 -->
+                <input type="number" required maxlength="1" class="sending_code__code_boxes">
+
+                <!-- Box 4 -->
+                <input type="number" required maxlength="1" class="sending_code__code_boxes">
+            </div>
+        </div>
+
+        <button class="sending_code__confirm_button">تایید</button>
+    </section>
+
+    <!-- Checking if the Person signed up before or not -->
+    <section class="sign_check">
+        <a href="{% url 'authentication:login' %}" class="sign_check__textI">قبلا ثبت نام کرده ام</a>
+        <a href="{% url 'authentication:login' %}" class="sign_check__textII">ورود</a>
+    </section>
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+</html>

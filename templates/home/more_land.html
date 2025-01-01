@@ -1,0 +1,568 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelk - املاک بیشتر</title>
+    <!-- css address -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"> <!-- For the Header and the Footer menu -->    
+    <link rel="stylesheet" href="{% static 'assets/css/more_landVII.css' %}">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}"><!-- For the header and footer -->
+    <link rel="stylesheet" href="{% static 'assets/css/more_landVII_responsive.css' %}"><!-- For the webpage -->
+
+
+
+    <!-- FontAwsome address -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header container">
+
+        <!-- menu -->
+        <div class="header__right">
+            <input type="checkbox" id="header__right_menuInput">
+
+            <!-- menu opener -->
+            <label for="header__right_menuInput"><i class="fa-solid fa-bars header__right_menuOpener"></i></label>
+
+            <!-- Menu, There need top be a JS, So that when the menu appears there's a black filter over the site -->
+            <ul class="header__right_menu">
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>خانه</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>اجاره</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>خرید </span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box">
+                        <span>فروش</span>
+                    </li>
+                </a>
+
+                <a href="#" class="header__right_menu_options">
+                    <li class="header__menu_options_box header__menu_options_box--no_border">
+                        <span>رهن</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Amelk Logo -->
+        <div class="header__site_logo">
+            <span>Amelk</span>
+            <img src="{% static 'assets/img/amelk_logo.png' %}" alt="Amelk Logo" class="header__logo_img">
+        </div>
+
+        <!-- user account -->
+        <div class="header__user">
+            <input type="checkbox" id="user" class="header__user_input">
+
+            <label for="user" class="header__user_opener"><i class="fa-solid fa-user"></i></label>
+
+            <!-- Menu, There need top be a JS, So that when the menu appears there's a black filter over the site -->
+            <ul class="header__user_menu">
+                <!-- 1st -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox"><span>ورود</span></li>
+                </a>
+
+                <!-- 2nd -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox"><span>نشان ها </span></li>
+                </a>
+
+                <!-- 3rd -->
+                <a href="#" class="header__user_menu_options">
+                    <li class="header__user_optionBox header__user_optionBox--border_none"><span>بازدیدهای اخیر </span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- Introduction to the Page -->
+    <section class="more_land_page container">
+        <i class="more_land_page__icon fa-solid fa-chevron-right"></i>
+
+        <span class="more_land_page__headline headline">املاک بیشتر</span>
+    </section>
+
+    <!-- All the Land -->
+    <section class="lands">
+
+        <!-- Land 1 -->
+        <div class="lands__landI">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/small_landI.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landI.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Land 2 -->
+        <div class="lands__landI">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/small_landII.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landII.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Land 3 -->
+        <div class="lands__landI">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/small_landIII.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landIII.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Land 4 -->
+        <div class="lands__landI">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/small_landIV.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landIV.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Land 5 -->
+        <div class="lands__landI">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/small_landV.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landV.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Land 6 (Appears on Desktop) -->
+        <div class="lands__landI lands__landI--hidden">
+
+            <!-- Image of Land (Mobile)-->
+            <div class="lands__land_img_div">
+                <img src="{% static 'assets/img/land/landVI.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Image of Land (Desktop)-->
+            <div class="lands__land_img_div lands__land_img_div--hidden">
+                <img src="{% static 'assets/img/land/landVI.png' %}" alt="Land" class="lands__land_img">
+            </div>
+
+            <!-- Details About the Land -->
+            <div class="lands__landI_details">
+
+                <!-- The Price and Type of Land -->
+                <div class="lands__landI_price_type">
+                    <!-- Disappear on Desktop -->
+                    <span class="lands__landI_type">آپارتمان</span>
+
+                    <span class="lands__landI_price">$267000</span>
+                </div>
+
+                <!-- Address -->
+                <div class="lands__landI_address_more">
+                    <!-- address -->
+                    <div class="lands__landI_address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="lands__landI_address_text">آدرس خیابان دانشگاه</span>
+                    </div>
+
+                    <!-- more (Appears on Desktop) -->
+                    <a href="#">
+                        <div class="lands__landI_more">
+                            <span>مشاهده جزئیات</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Icons -->
+                <div class="lands__landI_icons">
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-bed"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-fill-drip"></i></div>
+                    
+                    <!-- Splitting Line -->
+                    <div class="lands__landI_icons_splitting"></div>
+                    
+                    <!-- Icon -->
+                    <div class="lands__landI_icon_box"><i class="fa-solid fa-file-lines"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- For distancing the menu from the rest of the webpage -->
+    <div class="distance"></div>
+
+    <!-- Menu -->
+    <ul class="footer__menu">
+        <!-- 1st -->
+        <a href="#">
+            <li class="options">
+                <img src="{% static 'assets/img/footer_menu/moeny_bagI.png' %}" alt="" class="options_img">
+            </li>
+        </a>
+
+        <!-- 2nd -->
+        <a href="#">
+            <li class="options">
+                <img src="{% static 'assets/img/footer_menu/cardII.png' %}" alt="" class="options_img">
+            </li>
+        </a>
+
+        <!-- 3rd -->
+        <a href="#">
+            <li class="options option--big">
+                <img src="{% static 'assets/img/footer_menu/icon.png' %}" alt="" class="options_img options_img_dot">
+            </li>
+        </a>
+
+        <!-- 4th -->
+        <a href="#">
+            <li class="options">
+                <img src="{% static 'assets/img/footer_menu/buldingIV.png' %}" alt="" class="options_img">
+            </li>
+        </a>
+
+        <!-- 5th -->
+        <a href="#">
+            <li class="options">
+                <img src="{% static 'assets/img/footer_menu/money_lendV.png' %}" alt="" class="options_img">
+            </li>
+        </a>
+    </ul>
+
+    <section class="under_footer">
+
+        <!-- Top -->
+        <div class="under_footer__top">
+            <!-- Right -->
+            <div class="under_footer__top_right">
+                
+                <a href="#" class="under_footer__top_right_links"><span>Rent</span></a>
+                
+                <a href="#" class="under_footer__top_right_links"><span>Sell</span></a>
+                
+                <a href="#" class="under_footer__top_right_links"><span>Services</span></a>
+                
+                <a href="#" class="under_footer__top_right_links"><span>Home</span></a>
+
+            </div>
+
+            <!-- Left -->
+            <div class="under_footer__top_left">
+                <span>myProperty</span>
+                <i class="under_footer__top_leftIcon fa-solid fa-magnifying-glass-location"></i>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="under_footer__bottom">
+            <span>Copyright 2023 - Kodkustik All Right Reserved.</span>
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</body>
+
+</html>

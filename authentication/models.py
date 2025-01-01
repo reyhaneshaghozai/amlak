@@ -2,6 +2,7 @@ from django.db import models
 
 class PhoneNumber(models.Model):
     phone_number = models.CharField(max_length=15, unique=True)
+    password = models.CharField(max_length=255,default=0)
     otp_code = models.CharField(max_length=6, blank=True, null=True) 
     entered_otp = models.CharField(max_length=6, blank=True, null=True)  
     created_at = models.DateTimeField(auto_now_add=True)
@@ -17,8 +18,8 @@ class PhoneNumber(models.Model):
 class Signup(models.Model):
     phone_number= models.CharField(max_length=11)
     email= models.EmailField()
-    password1 = models.CharField(max_length=8)
-    password2 = models.CharField(max_length=8) 
+    password1 = models.CharField(max_length=15)
+    password2 = models.CharField(max_length=15) 
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

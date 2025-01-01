@@ -1,3 +1,26 @@
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'home/home.html')
+
+
+def request_for_suggestionII(request):
+    return render(request, 'home/request_for_suggestionII.html')
+    
+def more_land(request):
+    return render(request, 'home/more_land.html')
+    
+def renting_landIV(request):
+    return render(request, 'home/renting_landIV.html')
+    
+def selling_landIII(request):
+    return render(request, 'home/selling_landIII.html')
+
+def details(request):
+    return render(request, 'home/details.html')
+    
+
+
 from django.shortcuts import render,redirect
 from .forms import PropertyRequestForm ,RentalPropertyForm,RentalPropertyRequestForm
 from django.contrib import messages

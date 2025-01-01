@@ -1,0 +1,354 @@
+.land_page {
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box_holder {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.box_holder__box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+}
+
+.box_holder__box_right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: var(--overused_blue);
+
+    width: 100%;
+}
+
+.box_holder__name_type_price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 100%;
+
+    padding: 0px 56px;
+}
+
+.box_holder__name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.box_holder__type_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_holder__type {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box_holder__price {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "armita";
+}
+
+.box_holder__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 0px 56px;
+
+}
+
+.box_holder__contact_address {
+    font-size: 14px;
+}
+
+.box_holder__contact_methods {
+    display: none;
+    justify-content: space-between;
+}
+
+.box_holder__contact_calling, .box_holder__contact_chat {
+    width: 110px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    color: #fff;
+
+    background-color: var(--overused_blue);
+}
+
+.box_holder__land_details {
+    color: var(--primary_blue);
+
+    border-collapse: collapse;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    width: 100%;
+
+    margin-top: 20px;    
+}
+
+.box_holder__detail_row {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 15px 40px 10px;
+
+    border-bottom: 1px solid #C2E0FF;
+}
+
+.box_holder__land_area, .box_holder__land_meterial, .box_holder__land_sleep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box_holder__detail_second_row {
+    justify-content: flex-start;
+    gap: 137px;
+}
+
+.detail {
+    font-weight: 500;
+}
+
+.box_holder__tools {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 0px 40px;
+
+    color: var(--primary_blue);
+    font-weight: 700;
+
+    margin-top: 20px;
+
+    border-bottom: 1px solid #C2E0FF;
+    
+    padding-bottom: 20px;
+}
+
+.box_holder__tools_headline {
+    font-size: 12px;
+}
+
+.box_holder__tools_below {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_holder__tool_elevator, .box_holder__tool_parking, .box_holder__tool_storage {
+    height: 71px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+
+    border: 1px solid var(--last_grey);
+    border-radius: 16px;
+    
+    color: var(--last_grey);
+
+    padding: 0px 0px 0px 10px;
+
+    font-size: 12px;
+}
+
+.box_holder__tool_elevator {
+    width: 70px;
+}
+
+.box_holder__tool_parking {
+    width: 63px;
+}
+
+.box_holder__tool_storage {
+    width: 95px;
+}
+
+.box_holder__tools_boxes_icons {
+    font-size: 18px;
+}
+
+.box_holder__explainations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 0px 40px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-top: 30px;
+
+    border-bottom: 1px solid #C2E0FF;
+
+    padding-bottom: 10px;
+}
+
+.box_holder__explainations_headline {
+    color: var(--primary_blue);
+}
+
+.box_holder__explainations_restOf {
+    display: flex;
+    flex-direction: column;
+}
+
+.box_holder__add {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 0px 40px;
+
+    border-bottom: 1px solid #C2E0FF;
+
+    padding-bottom: 10px;
+
+    margin-top: 5px;
+}
+
+.box_holder__add_text {
+    color: var(--primary_blue);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.box_holder__notes {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.box_holder__notes_form {
+    width: 100%;
+    height: 103px;
+
+    border: 1px solid var(--last_grey);
+
+    padding: 10px;
+
+    font-family: "IRANSansWeb";
+}
+
+.box_holder__notes_underText {
+    font-size: 8px;
+    font-weight: 700;
+    color: var(--overused_blue);
+}
+
+.box_holder__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 60px;
+}
+
+.box_holder__buttons_calling, .box_holder__buttons_chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 34px;
+    width: 127px;
+
+    background-color: var(--primary_blue);
+
+    border-radius: 5px;
+
+    color: #fff;
+    
+}
+
+/* Left */
+.box_holder__box_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.box_holder__images {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box_holder__imageBig_div {
+    width: 202px;
+
+    border: 6px solid #BFDBF8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 10px;
+}
+
+.box_holder__imageBig {
+    width: 100%;
+}
+
+.box_holder__smaller_images {
+    display: flex;
+    justify-content: space-between;
+
+    width: 202px;
+}
+
+.box_holder__imageBig_div--smaller {
+    width: 46px;
+
+    border: 2px solid #BFDBF8;
+
+    padding: 2px 3px;
+}
+
+.box_holder__imageBig_div--smaller_hidden {
+    display: none;
+}
+
+.box_holder__box_left_desktop {
+    display: none;
+}
+
+.distance {
+    margin-top: 150px;
+}
